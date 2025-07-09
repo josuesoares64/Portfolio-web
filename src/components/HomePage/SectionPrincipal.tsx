@@ -38,8 +38,7 @@ const SectionPrincipal = () => {
 
   return (
       <section className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center">
-  {/* Texto primeiro */}
-  <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
+    <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
     <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white">
       Olá! Eu sou o Josué Soares
     </h2>

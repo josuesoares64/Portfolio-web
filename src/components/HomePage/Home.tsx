@@ -1,5 +1,6 @@
 import SectionHabilidades from "./SectionHabilidades";
 import SectionPrincipal from "./SectionPrincipal";
+import SectionProjetos from "./SectionProjetos";
 import SectionSobre from "./SectionSobre"
 
 const HomeContent = () => {
@@ -8,6 +9,7 @@ const HomeContent = () => {
             <SectionPrincipal/>
             <SectionSobre />
             <SectionHabilidades/>
+            <SectionProjetos/>
         </div>
     )
 }
