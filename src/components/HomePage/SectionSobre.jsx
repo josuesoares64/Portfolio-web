@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const SectionSobre = () => {
   return (
-    <section className='h-full p-0 p-6'>
+    <section id='SectionSobre' className='h-full p-0 p-6'>
     <div className="p-6 flex flex-col text-center lg:flex-row items-start">
       <div className="lg:w-1/2">
         <h2 className="text-2xl font-semibold mb-4">Sobre Mim</h2>

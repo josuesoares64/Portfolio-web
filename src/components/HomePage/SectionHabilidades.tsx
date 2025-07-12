@@ -2,7 +2,7 @@ import { SiCss3, SiFigma, SiGit, SiGithub, SiHtml5, SiJavascript, SiMysql, SiNex
 
 const SectionHabilidades = () => {
     return (
-        <section className="w-full flex justify-center h-full">
+        <section id="SectionHabilidade" className="w-full flex justify-center h-full">
             <div className="text-center p-4 max-w-7xl">
                 <h2 className="text-2xl font-semibold mb-4">Habilidades</h2>
                 <ul className="grid sm:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-x-10 gap-y-3 sm:gap-y-7 justify-items-center">

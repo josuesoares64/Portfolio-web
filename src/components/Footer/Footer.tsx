@@ -2,7 +2,7 @@ import { SiFacebook, SiGithub, SiInstagram, SiLinkedin, SiWhatsapp } from "react
 
 const Footer = () => {
     return(
-        <footer className="w-full bg-neutral-900 py-9">
+        <footer id="SectionContato" className="w-full bg-neutral-900 py-9">
             <div className="flex justify-center direction-cols gap-4">
                 <a className="text-2xl" href="https://wa.me/558881185172"><SiWhatsapp/></a>
                 <a className="text-2xl" href="https://www.facebook.com/share/16CAtkDVTT/"><SiFacebook/></a>

@@ -3,7 +3,7 @@ import { SlGlobe } from "react-icons/sl";
 
 const SectionProjetos = () => {
     return (
-        <section className="flex flex-col p-5 m-6 items-center justify-center mb-4 text-center">
+        <section id="SectioProjetos" className="flex flex-col p-5 m-6 items-center justify-center mb-4 text-center">
             <h2 className="text-2xl font-bold mb-4 mb-8">Projetos</h2>
             <div className="sm:grid sm:grid-cols-2 gap-5">
                 <div className="w-50 mb-2">
