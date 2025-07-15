@@ -51,10 +51,10 @@ const SectionPrincipal = () => {
     </div>
 
     <div className="flex justify-center lg:justify-start gap-4 py-4 text-2xl sm:text-3xl">
-      <a href="#" className="hover:text-gray-400"><FaGithub /></a>
-      <a href="#" className="hover:text-gray-400"><FaLinkedin /></a>
-      <a href="#" className="hover:text-gray-400"><FaInstagram /></a>
-      <a href="#" className="hover:text-gray-400"><FaWhatsapp /></a>
+      <a href="https://github.com/josuesoares64" className="hover:text-gray-400"><FaGithub /></a>
+      <a href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/" className="hover:text-gray-400"><FaLinkedin /></a>
+      <a href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg==" className="hover:text-gray-400"><FaInstagram /></a>
+      <a href="https://wa.me/558882199616" className="hover:text-gray-400"><FaWhatsapp /></a>
     </div>
 
     <a
