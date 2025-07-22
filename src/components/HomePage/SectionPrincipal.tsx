@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
 
 const SectionPrincipal = () => {
   const frases = [
@@ -34,11 +35,11 @@ const SectionPrincipal = () => {
     }, deletando ? 40 : 100);
 
     return () => clearTimeout(timeout);
-  }, [subIndex, deletando, espera]);
+  }, [subIndex, deletando, espera, index, frases]);
 
   return (
     <section id='SectionPrincipal' className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-24 md:pt-0">
-      {/* Conteúdo de texto */}
+      {/* Text content */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -67,10 +68,42 @@ const SectionPrincipal = () => {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="flex justify-center lg:justify-start gap-4 py-4 text-2xl sm:text-3xl"
         >
-          <a href="https://github.com/josuesoares64" className="hover:text-gray-400 transition-colors"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/" className="hover:text-gray-400 transition-colors"><FaLinkedin /></a>
-          <a href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg==" className="hover:text-gray-400 transition-colors"><FaInstagram /></a>
-          <a href="https://wa.me/558882199616" className="hover:text-gray-400 transition-colors"><FaWhatsapp /></a>
+          <a 
+            href="https://github.com/josuesoares64" 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaGithub />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaLinkedin />
+          </a>
+          <a 
+            href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg==" 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaInstagram />
+          </a>
+          <a 
+            href="https://wa.me/558882199616" 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaWhatsapp />
+          </a>
         </motion.div>
 
         <motion.a
@@ -87,18 +120,24 @@ const SectionPrincipal = () => {
         </motion.a>
       </div>
 
-      {/* Imagem */}
+      {/* Image */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
         className="w-full lg:w-1/2 flex items-center justify-center p-4"
       >
-        <img
-          src="/img/Foto-do-desenvolvedor.png"
-          alt="Foto do desenvolvedor"
-          className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto object-contain rounded-lg shadow-md"
-        />
+        <div className="relative w-40 sm:w-52 md:w-60 lg:w-72 aspect-square">
+          <Image
+            src="/img/Foto-do-desenvolvedor.png"
+            alt="Josué Soares - Desenvolvedor FullStack"
+            fill
+            sizes="(max-width: 768px) 50vw, 33vw"
+            className="object-contain rounded-lg shadow-md"
+            priority
+            quality={90}
+          />
+        </div>
       </motion.div>
     </section>
   );

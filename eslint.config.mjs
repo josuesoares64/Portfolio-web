@@ -1,20 +1,62 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
+import globals from "globals";
+import tseslint from "typescript-eslint";
+import pluginReact from "eslint-plugin-react";
+import nextPlugin from "@next/eslint-plugin-next";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+export default [
+  // Configuração base
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    ignores: ["**/node_modules/**", "**/.next/**", "**/out/**"],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        ecmaVersion: "latest",
+        sourceType: "module",
+      },
+    },
+    settings: {
+      react: {
+        version: "detect", // Adiciona detecção automática da versão do React
+      },
+    },
+  },
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+  // Regras padrão do ESLint
+  js.configs.recommended,
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // TypeScript
+  ...tseslint.configs.recommended,
+
+  // React
+  {
+    plugins: {
+      react: pluginReact,
+    },
+    rules: {
+      ...pluginReact.configs.recommended.rules,
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+      "react/version": "off", // Opcional: desativa verificação de versão se quiser
+    },
+  },
+
+  // Next.js
+  {
+    plugins: {
+      "@next/next": nextPlugin,
+    },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      "@next/next/no-html-link-for-pages": "off",
+      "@next/next/no-img-element": "warn", // Mantém como warning ao invés de error
+    },
+  },
 ];
-
-{
-  "extends": "next/core-web-vitals"
-}
-
-export default eslintConfig;

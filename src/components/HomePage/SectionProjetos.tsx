@@ -12,35 +12,42 @@ const SectionProjetos = () => {
       titulo: "Pokédex",
       imagem: "/img/pokedex.png",
       github: "https://github.com/josuesoares64/pokedex",
-      demo: "https://pokedex-cqfa.vercel.app/"
+      demo: "https://pokedex-cqfa.vercel.app/",
+      width: 800,  // Adicionei dimensões reais das imagens
+      height: 450
     },
     {
       id: 2,
       titulo: "Plataforma Streaming",
       imagem: "/img/plataforma-streaming.png",
       github: "https://github.com/josuesoares64/Plataforma-Streaming",
-      demo: "https://plataforma-streaming-ecru.vercel.app/"
+      demo: "https://plataforma-streaming-ecru.vercel.app/",
+      width: 800,
+      height: 450
     },
     {
       id: 3,
       titulo: "Portfólio Advogado",
       imagem: "/img/pagina-advogado.png",
       github: "https://github.com/josuesoares64/portfolio-advogado",
-      demo: "https://josuesoares64.github.io/portfolio-advogado/"
+      demo: "https://josuesoares64.github.io/portfolio-advogado/",
+      width: 800,
+      height: 450
     },
     {
       id: 4,
       titulo: "Projeto Android",
       imagem: "/img/projeto-android.png",
       github: "https://github.com/josuesoares64/projeto-android",
-      demo: "https://projeto-android-gules.vercel.app/"
+      demo: "https://projeto-android-gules.vercel.app/",
+      width: 800,
+      height: 450
     }
   ];
 
   return (
     <section id="SectionProjetos" className="py-12 md:py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Título com animação opcional (se quiser remover, troque motion.h2 por h2) */}
         <motion.h2
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -51,7 +58,6 @@ const SectionProjetos = () => {
           Projetos
         </motion.h2>
 
-        {/* Grid de projetos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {projetos.map((projeto) => (
             <motion.div
@@ -66,10 +72,13 @@ const SectionProjetos = () => {
               <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={projeto.imagem}
-                  alt={projeto.titulo}
-                  fill
+                  alt={`Captura de tela do projeto ${projeto.titulo}`}
+                  width={projeto.width}
+                  height={projeto.height}
                   className="object-cover"
                   sizes="(max-width: 639px) 100vw, (max-width: 767px) 50vw, 25vw"
+                  quality={85}
+                  priority={projeto.id === 1} // Apenas a primeira imagem com prioridade
                 />
               </div>
               
@@ -81,7 +90,7 @@ const SectionProjetos = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-white transition-colors"
-                    aria-label={`Código no GitHub - ${projeto.titulo}`}
+                    aria-label={`Ver código no GitHub - ${projeto.titulo}`}
                   >
                     <SiGithub className="text-2xl" />
                   </a>
@@ -90,7 +99,7 @@ const SectionProjetos = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-blue-400 transition-colors"
-                    aria-label={`Demo ao vivo - ${projeto.titulo}`}
+                    aria-label={`Ver demonstração ao vivo - ${projeto.titulo}`}
                   >
                     <SlGlobe className="text-2xl" />
                   </a>

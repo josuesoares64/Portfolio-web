@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const SectionSobre = () => {
-  // Configurações de animação
+  // Animation configurations
   const container = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,7 +49,7 @@ const SectionSobre = () => {
         variants={container}
         className="container mx-auto flex flex-col lg:flex-row items-start gap-8"
       >
-        {/* Texto */}
+        {/* Text content */}
         <motion.div 
           variants={container}
           className="lg:w-1/2 space-y-6"
@@ -83,7 +83,7 @@ const SectionSobre = () => {
           </motion.p>
         </motion.div>
 
-        {/* Imagem */}
+        {/* Image */}
         <motion.div 
           variants={imageAnimation}
           className="lg:w-1/2 flex justify-center"
@@ -92,13 +92,17 @@ const SectionSobre = () => {
             transition: { duration: 0.3 }
           }}
         >
-          <Image
-            src="/img/figurinha_ilustrativa.png"
-            alt="Ilustração de desenvolvimento"
-            width={400}
-            height={400}
-            className="rounded-lg shadow-lg"
-          />
+          <div className="relative w-full max-w-[400px] aspect-square">
+            <Image
+              src="/img/figurinha_ilustrativa.png"
+              alt="Ilustração estilizada de Josué desenvolvendo em seu computador"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="rounded-lg shadow-lg object-cover"
+              quality={90}
+              priority
+            />
+          </div>
         </motion.div>
       </motion.div>
     </section>
