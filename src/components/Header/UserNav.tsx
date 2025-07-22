@@ -1,7 +1,7 @@
 const UserNav = () => {
   return (
     <nav>
-      <ul className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+      <ul className="flex flex-col md:gap-1 md:flex-row items-center gap-4 md:gap-6">
         <li>
           <a href="#SectionSobre" className="text-white text-xl uppercase font-bold p-1">
             Sobre Mim
@@ -13,7 +13,7 @@ const UserNav = () => {
           </a>
         </li>
         <li>
-          <a href="#SectioProjetos" className="text-white text-xl uppercase font-bold p-1">
+          <a href="#SectionProjetos" className="text-white text-xl uppercase font-bold p-1">
             Projetos
           </a>
         </li>

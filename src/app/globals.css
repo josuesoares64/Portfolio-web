@@ -19,3 +19,45 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.font-lobster {
+  font-family: var(--font-lobster), cursive;
+  font-weight: 400;
+}
+
+/* globals.css */
+
+/* Configuração da fonte Roboto Condensed */
+.font-roboto-condensed {
+  font-family: var(--font-roboto-condensed), 'Roboto Condensed', sans-serif;
+}
+
+/* Se precisar de pesos específicos */
+.font-roboto-condensed-regular {
+  font-family: var(--font-roboto-condensed), 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.font-roboto-condensed-bold {
+  font-family: var(--font-roboto-condensed), 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+/* Aplicação global (opcional) */
+body {
+  font-family: var(--font-roboto-condensed), 'Roboto Condensed', sans-serif;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

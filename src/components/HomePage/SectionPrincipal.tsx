@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import img from '/public/img/Foto-do-desenvolvedor.png';
+import { motion } from 'framer-motion';
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const SectionPrincipal = () => {
@@ -37,46 +37,70 @@ const SectionPrincipal = () => {
   }, [subIndex, deletando, espera]);
 
   return (
-      <section id='SectionPrincipal' className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center">
-    <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
-    <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-white">
-      Olá! Eu sou o Josué Soares
-    </h2>
+    <section id='SectionPrincipal' className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-24 md:pt-0">
+      {/* Conteúdo de texto */}
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-xl sm:text-2xl md:text-3xl font-black text-white"
+        >
+          Olá! Eu sou o Josué Soares
+        </motion.h2>
 
-    <div className="text-green-600 text-base sm:text-lg md:text-4xl font-semibold min-h-[40px] sm:min-h-[50px] md:min-h-[60px]">
-      <span>
-        {frases[index].substring(0, subIndex)}
-        <span className="animate-pulse text-white">|</span>
-      </span>
-    </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="text-green-600 text-base sm:text-lg md:text-4xl font-semibold min-h-[40px] sm:min-h-[50px] md:min-h-[60px]"
+        >
+          <span>
+            {frases[index].substring(0, subIndex)}
+            <span className="animate-pulse text-white">|</span>
+          </span>
+        </motion.div>
 
-    <div className="flex justify-center lg:justify-start gap-4 py-4 text-2xl sm:text-3xl">
-      <a href="https://github.com/josuesoares64" className="hover:text-gray-400"><FaGithub /></a>
-      <a href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/" className="hover:text-gray-400"><FaLinkedin /></a>
-      <a href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg==" className="hover:text-gray-400"><FaInstagram /></a>
-      <a href="https://wa.me/558882199616" className="hover:text-gray-400"><FaWhatsapp /></a>
-    </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="flex justify-center lg:justify-start gap-4 py-4 text-2xl sm:text-3xl"
+        >
+          <a href="https://github.com/josuesoares64" className="hover:text-gray-400 transition-colors"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/" className="hover:text-gray-400 transition-colors"><FaLinkedin /></a>
+          <a href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg==" className="hover:text-gray-400 transition-colors"><FaInstagram /></a>
+          <a href="https://wa.me/558882199616" className="hover:text-gray-400 transition-colors"><FaWhatsapp /></a>
+        </motion.div>
 
-    <a
-      href="/files/curriculo.desenvolvedor.pdf"
-      download="Josue_Soares_Curriculo.pdf"
-      className="bg-green-800 hover:bg-slate-400 w-full sm:w-60 text-white font-bold py-2 px-6 rounded-lg shadow transition duration-300 text-center"
-    >
-      Baixar Currículo
-    </a>
-  </div>
+        <motion.a
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.5 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          href="/files/curriculo.desenvolvedor.pdf"
+          download="Josue_Soares_Curriculo.pdf"
+          className="bg-green-800 hover:bg-slate-400 w-full sm:w-60 text-white font-bold py-2 px-6 rounded-lg shadow transition duration-300 text-center"
+        >
+          Baixar Currículo
+        </motion.a>
+      </div>
 
-  {/* Imagem depois */}
-  <div className="w-full lg:w-1/2 flex items-center justify-center p-4">
-    <img
-      src="/img/Foto-do-desenvolvedor.png"
-      alt="Foto do desenvolvedor"
-      className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto object-contain rounded-lg shadow-md"
-    />
-  </div>
-</section>
-
-
+      {/* Imagem */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+        className="w-full lg:w-1/2 flex items-center justify-center p-4"
+      >
+        <img
+          src="/img/Foto-do-desenvolvedor.png"
+          alt="Foto do desenvolvedor"
+          className="w-40 sm:w-52 md:w-60 lg:w-72 h-auto object-contain rounded-lg shadow-md"
+        />
+      </motion.div>
+    </section>
   );
 };
 

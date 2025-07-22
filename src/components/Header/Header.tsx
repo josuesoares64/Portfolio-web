@@ -1,35 +1,38 @@
 "use client"
 import { useState } from "react";
 import UserNav from "./UserNav";
-import { HiMenu, HiX } from "react-icons/hi"; // Ícones de menu
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex shadow-xl/30 shadow-green-300/50 bg-green-800 bg-opacity-5 fixed w-full py-6 px-4 justify-between items-center z-50">
-      <a href="#SectionPrincipal">
-        <h1 className="text-white font-bold uppercase text-2xl">Josué Soares</h1>
-      </a>
+    <header className="fixed w-full top-0 left-0 right-0 py-4 px-4 bg-green-800 bg-opacity-5 shadow-lg z-50">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+        <a href="#SectionPrincipal" className="flex-shrink-0">
+          <h1 className="text-white font-lobster text-2xl md:text-3xl tracking-wider">
+            Josué Soares
+          </h1>
+        </a>
 
-      {/* Menu desktop */}
-      <nav className="hidden md:flex gap-6">
-        <UserNav />
-      </nav>
-
-      {/* Botão hambúrguer no mobile */}
-      <button
-        className="md:hidden text-white text-3xl"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? <HiX /> : <HiMenu />}
-      </button>
-
-      {/* Menu mobile */}
-      {isOpen && (
-        <nav className="absolute top-full right-0 bg-slate-950 w-full flex flex-col items-center py-4 gap-4 md:hidden">
+        <nav className="hidden md:flex gap-6">
           <UserNav />
         </nav>
+
+        <button
+          className="md:hidden text-white text-3xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <HiX /> : <HiMenu />}
+        </button>
+      </div>
+
+      {isOpen && (
+        <div className="md:hidden fixed inset-0 bg-black bg-opacity-70 z-40 mt-16">
+          <nav className="bg-green-800 p-4">
+            <UserNav mobile />
+          </nav>
+        </div>
       )}
     </header>
   );
