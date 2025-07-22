@@ -12,9 +12,9 @@ const containerVariants: Variants = {
       delayChildren: 0.3
     }
   }
-};
+} as const;
 
-const itemVariants: Variants = {
+const itemVariants = {
   hidden: { y: 30, opacity: 0 },
   visible: {
     y: 0,
@@ -26,9 +26,9 @@ const itemVariants: Variants = {
       duration: 0.5
     }
   }
-};
+} as const;
 
-const hoverVariants: Variants = {
+const hoverVariants = {
   hover: {
     y: -8,
     scale: 1.1,
@@ -37,7 +37,8 @@ const hoverVariants: Variants = {
       stiffness: 300 
     }
   }
-};
+} as const;
+
 
 // ==================== COMPONENTE PRINCIPAL ====================
 const SectionHabilidades = () => {

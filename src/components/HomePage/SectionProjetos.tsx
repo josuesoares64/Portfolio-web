@@ -37,56 +37,30 @@ const SectionProjetos = () => {
     }
   ];
 
-  // Animations
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
-  };
-
-  const item = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 10
-      }
-    }
-  };
-
   return (
     <section id="SectionProjetos" className="py-12 md:py-20 px-4">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={container}
-        className="max-w-7xl mx-auto"
-      >
-        <motion.h2 
-          variants={item}
+      <div className="max-w-7xl mx-auto">
+        {/* Título com animação opcional (se quiser remover, troque motion.h2 por h2) */}
+        <motion.h2
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
           className="text-2xl md:text-3xl font-bold mb-8 text-center"
         >
           Projetos
         </motion.h2>
 
-        <motion.div 
-          variants={container}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-        >
+        {/* Grid de projetos */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {projetos.map((projeto) => (
             <motion.div
               key={projeto.id}
-              variants={item}
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               whileHover={{ y: -5 }}
+              viewport={{ once: true }}
+              transition={{ type: "spring", stiffness: 100 }}
               className="bg-gray-800 bg-opacity-50 rounded-xl overflow-hidden shadow-lg"
             >
               <div className="relative h-48 w-full overflow-hidden">
@@ -124,8 +98,8 @@ const SectionProjetos = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 };
