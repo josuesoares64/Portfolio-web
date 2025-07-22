@@ -1,9 +1,8 @@
 'use client';
-
 import { motion, Variants } from 'framer-motion';
 import { SiCss3, SiFigma, SiGit, SiGithub, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 
-// Definindo tipos explícitos para as animações
+// ==================== DEFINIÇÕES DAS ANIMAÇÕES ====================
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -29,12 +28,18 @@ const itemVariants: Variants = {
   }
 };
 
-const hoverAnimation = {
-  y: -8,
-  scale: 1.1,
-  transition: { type: "spring", stiffness: 300 }
+const hoverVariants: Variants = {
+  hover: {
+    y: -8,
+    scale: 1.1,
+    transition: { 
+      type: "spring", 
+      stiffness: 300 
+    }
+  }
 };
 
+// ==================== COMPONENTE PRINCIPAL ====================
 const SectionHabilidades = () => {
   const skills = [
     { icon: <SiHtml5 size={50} />, name: "HTML5", color: "hover:text-orange-500" },
@@ -75,7 +80,8 @@ const SectionHabilidades = () => {
             <motion.li
               key={index}
               variants={itemVariants}
-              whileHover={hoverAnimation}
+              whileHover="hover" // Referência à variante hover
+              custom={index}
               className={`text-5xl sm:text-6xl p-4 transition-colors duration-300 ${skill.color}`}
               title={skill.name}
             >

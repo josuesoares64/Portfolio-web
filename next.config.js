@@ -1,19 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Mantenha true para desenvolvimento
-  swcMinify: true, // Ative para produção
+  reactStrictMode: true,
+  swcMinify: true,
   transpilePackages: ['framer-motion'],
-  output: 'standalone',
-  generateEtags: true, // Mantenha para cache controlado
-  poweredByHeader: false, // Segurança: remova o cabeçalho X-Powered-By
-  experimental: {
-    forceSwcTransforms: true,
-    // Adicione apenas experimentais necessários
-  },
-  // Otimizações para imagens/animações
   images: {
     disableStaticImages: false,
   },
+  experimental: {
+    forceSwcTransforms: true,
+  }
 }
 
 module.exports = nextConfig
