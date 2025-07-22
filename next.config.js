@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true
-  },
-  // Adicione apenas se estiver usando Framer Motion
+  // O bloco eslint foi removido daqui
   transpilePackages: ['framer-motion']
 };
 
