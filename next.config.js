@@ -2,15 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   eslint: {
-    ignoreDuringBuilds: true, // Ignora erros de ESLint
+    ignoreDuringBuilds: true
   },
-  typescript: {
-    ignoreBuildErrors: true, // Ignora erros de TypeScript
-  },
-  // Adicione se estiver usando imagens otimizadas
-  images: {
-    unoptimized: true, // Remove warnings de imagens
-  }
-}
+  // Adicione apenas se estiver usando Framer Motion
+  transpilePackages: ['framer-motion']
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
