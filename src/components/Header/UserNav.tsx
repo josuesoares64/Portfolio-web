@@ -1,26 +1,48 @@
-const UserNav = () => {
+import Link from "next/link";
+
+interface UserNavProps {
+  mobile?: boolean;
+}
+
+const UserNav = ({ mobile }: UserNavProps) => {
   return (
     <nav>
-      <ul className="flex flex-col md:gap-1 md:flex-row items-center gap-4 md:gap-6">
+      <ul className={`flex ${mobile ? 'flex-col space-y-6' : 'flex-row space-x-6'} items-center`}>
         <li>
-          <a href="#SectionSobre" className="text-white text-xl uppercase font-bold p-1">
+          <Link 
+            href="#SectionSobre" 
+            className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            scroll={false}
+          >
             Sobre Mim
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#SectionHabilidade" className="text-white text-xl uppercase font-bold p-1">
-            Habilidade
-          </a>
+          <Link 
+            href="#SectionHabilidade" 
+            className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            scroll={false}
+          >
+            Habilidades
+          </Link>
         </li>
         <li>
-          <a href="#SectionProjetos" className="text-white text-xl uppercase font-bold p-1">
+          <Link 
+            href="#SectionProjetos" 
+            className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            scroll={false}
+          >
             Projetos
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#SectionContato" className="text-white text-xl uppercase font-bold p-1">
+          <Link 
+            href="#SectionContato" 
+            className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            scroll={false}
+          >
             Contato
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
