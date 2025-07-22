@@ -30,7 +30,7 @@ const Header = () => {
       {isOpen && (
         <div className="md:hidden fixed inset-0 bg-black bg-opacity-70 z-40 mt-16">
           <nav className="bg-green-800 p-4">
-            <UserNav mobile />
+            <UserNav/>
           </nav>
         </div>
       )}
