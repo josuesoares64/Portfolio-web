@@ -1,6 +1,9 @@
 'use client';
 import { motion, Variants } from 'framer-motion';
-import { SiCss3, SiFigma, SiGit, SiGithub, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { 
+  SiCss3, SiFigma, SiGit, SiGithub, SiHtml5, SiJavascript, 
+  SiMysql, SiNextdotjs, SiPython, SiReact, SiTailwindcss, SiTypescript 
+} from "react-icons/si";
 
 // ==================== DEFINIÇÕES DAS ANIMAÇÕES ====================
 const containerVariants: Variants = {
@@ -14,7 +17,7 @@ const containerVariants: Variants = {
   }
 } as const;
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { y: 30, opacity: 0 },
   visible: {
     y: 0,
@@ -25,10 +28,7 @@ const itemVariants = {
       damping: 10,
       duration: 0.5
     }
-  }
-} as const;
-
-const hoverVariants = {
+  },
   hover: {
     y: -8,
     scale: 1.1,
@@ -38,7 +38,6 @@ const hoverVariants = {
     }
   }
 } as const;
-
 
 // ==================== COMPONENTE PRINCIPAL ====================
 const SectionHabilidades = () => {
@@ -81,7 +80,7 @@ const SectionHabilidades = () => {
             <motion.li
               key={index}
               variants={itemVariants}
-              whileHover="hover" // Referência à variante hover
+              whileHover="hover"
               custom={index}
               className={`text-5xl sm:text-6xl p-4 transition-colors duration-300 ${skill.color}`}
               title={skill.name}
