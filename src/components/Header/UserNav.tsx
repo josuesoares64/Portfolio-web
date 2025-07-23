@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface UserNavProps {
   mobile?: boolean;
 }
@@ -9,40 +7,36 @@ const UserNav = ({ mobile }: UserNavProps) => {
     <nav>
       <ul className={`flex ${mobile ? 'flex-col space-y-6' : 'flex-row space-x-6'} items-center`}>
         <li>
-          <Link 
-            href="#SectionSobre" 
+          <a
+            href="#SectionSobre"
             className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
-            scroll={false}
           >
             Sobre Mim
-          </Link>
+          </a>
         </li>
         <li>
-          <Link 
-            href="#SectionHabilidade" 
+          <a
+            href="#SectionHabilidade"
             className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
-            scroll={false}
           >
             Habilidades
-          </Link>
+          </a>
         </li>
         <li>
-          <Link 
-            href="#SectionProjetos" 
+          <a
+            href="#SectionProjetos"
             className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
-            scroll={false}
           >
             Projetos
-          </Link>
+          </a>
         </li>
         <li>
-          <Link 
-            href="#SectionContato" 
+          <a
+            href="#SectionContato"
             className="text-white text-xl uppercase font-bold hover:text-green-300 transition-colors"
-            scroll={false}
           >
             Contato
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
