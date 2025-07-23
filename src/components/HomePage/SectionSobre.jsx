@@ -4,16 +4,16 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const SectionSobre = () => {
-  // Animation configurations
+  // Configurações de animação
   const container = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const item = {
@@ -23,9 +23,9 @@ const SectionSobre = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const imageAnimation = {
@@ -35,47 +35,47 @@ const SectionSobre = () => {
       x: 0,
       transition: {
         duration: 0.8,
-        delay: 0.5
-      }
-    }
+        delay: 0.5,
+      },
+    },
   };
 
   return (
-    <section id='SectionSobre' className='h-full py-12 md:py-20 px-6'>
-      <motion.div 
+    <section id="SectionSobre" className="h-full py-12 md:py-20 lg:px-20 px-6">
+      <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: '-100px' }}
         variants={container}
         className="container mx-auto flex flex-col lg:flex-row items-start gap-8"
       >
-        {/* Text content */}
-        <motion.div 
+        {/* Texto */}
+        <motion.div
           variants={container}
           className="lg:w-1/2 space-y-6"
         >
-          <motion.h2 
+          <motion.h2
             variants={item}
             className="text-2xl md:text-3xl font-semibold text-center lg:text-left"
           >
             Sobre Mim
           </motion.h2>
 
-          <motion.p 
+          <motion.p
             variants={item}
             className="text-justify indent-4"
           >
             Sou Josué, desenvolvedor FullStack com foco em front-end, criando interfaces modernas, responsivas e funcionais. Tenho experiência com HTML, CSS, JavaScript, Python e MySQL, e recentemente venho me especializando em tecnologias como React, Next.js, TypeScript e Tailwind CSS, que me permitem entregar aplicações mais performáticas, organizadas e escaláveis.
           </motion.p>
 
-          <motion.p 
+          <motion.p
             variants={item}
             className="text-justify indent-4"
           >
             Sou formado em Análise e Desenvolvimento de Sistemas e também atuo com boas práticas de SEO e otimização de sites, garantindo melhor desempenho e visibilidade nos mecanismos de busca. Utilizo o Figma para transformar ideias em protótipos funcionais e o GitHub para versionamento e colaboração em equipe.
           </motion.p>
 
-          <motion.p 
+          <motion.p
             variants={item}
             className="text-justify indent-4"
           >
@@ -83,13 +83,14 @@ const SectionSobre = () => {
           </motion.p>
         </motion.div>
 
-        {/* Image */}
-        <motion.div 
+        {/* Imagem */}
+        <motion.div
           variants={imageAnimation}
-          className="lg:w-1/2 flex justify-center"
-          whileHover={{ 
+          // 🔑 Correção: w-full abaixo de lg, w-1/2 em lg+
+          className="w-full lg:w-1/2 flex justify-center"
+          whileHover={{
             scale: 1.03,
-            transition: { duration: 0.3 }
+            transition: { duration: 0.3 },
           }}
         >
           <div className="relative w-full max-w-[400px] aspect-square">

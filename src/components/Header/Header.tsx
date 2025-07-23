@@ -7,7 +7,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 left-0 right-0 py-4 px-4 bg-green-800 bg-opacity-95 shadow-lg z-50">
+    <header className="fixed w-full top-0 left-0 right-0 py-4 px-4 bg-slate-700 bg-opacity-20 shadow-lg z-50">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <a href="#SectionPrincipal" className="flex-shrink-0">
           <h1 className="text-white font-lobster text-2xl md:text-3xl tracking-wider">

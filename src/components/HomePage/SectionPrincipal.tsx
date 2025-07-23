@@ -38,7 +38,7 @@ const SectionPrincipal = () => {
   }, [subIndex, deletando, espera, index, frases]);
 
   return (
-    <section id='SectionPrincipal' className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-24 md:pt-0">
+    <section id='SectionPrincipal' className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-14 md:pt-0">
       {/* Text content */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
         <motion.h2
@@ -127,19 +127,20 @@ const SectionPrincipal = () => {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="w-full lg:w-1/2 flex items-center justify-center p-4"
       >
-        <div className="relative w-40 sm:w-52 md:w-60 lg:w-72 aspect-square">
+        <div className="relative w-full max-w-[450px] aspect-square">
           <Image
             src="/img/Foto-do-desenvolvedor.png"
             alt="Josué Soares - Desenvolvedor FullStack"
             fill
-            sizes="(max-width: 768px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-contain rounded-lg shadow-md"
             priority
             quality={90}
           />
         </div>
       </motion.div>
-    </section>
+
+        </section>
   );
 };
 

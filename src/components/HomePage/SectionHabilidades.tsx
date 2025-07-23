@@ -42,18 +42,18 @@ const itemVariants: Variants = {
 // ==================== COMPONENTE PRINCIPAL ====================
 const SectionHabilidades = () => {
   const skills = [
-    { icon: <SiHtml5 size={50} />, name: "HTML5", color: "hover:text-orange-500" },
-    { icon: <SiCss3 size={50} />, name: "CSS3", color: "hover:text-blue-500" },
-    { icon: <SiTailwindcss size={50} />, name: "Tailwind CSS", color: "hover:text-cyan-400" },
-    { icon: <SiJavascript size={50} />, name: "JavaScript", color: "hover:text-yellow-400" },
-    { icon: <SiTypescript size={50} />, name: "TypeScript", color: "hover:text-blue-600" },
-    { icon: <SiNextdotjs size={50} />, name: "Next.js", color: "hover:text-black dark:hover:text-white" },
-    { icon: <SiReact size={50} />, name: "React", color: "hover:text-blue-400" },
-    { icon: <SiPython size={50} />, name: "Python", color: "hover:text-blue-700" },
-    { icon: <SiMysql size={50} />, name: "MySQL", color: "hover:text-blue-800" },
-    { icon: <SiGithub size={50} />, name: "GitHub", color: "hover:text-gray-800 dark:hover:text-gray-200" },
-    { icon: <SiGit size={50} />, name: "Git", color: "hover:text-orange-600" },
-    { icon: <SiFigma size={50} />, name: "Figma", color: "hover:text-purple-500" }
+    { icon: <SiHtml5 size={90} />, name: "HTML5", color: "hover:text-orange-500" },
+    { icon: <SiCss3 size={90} />, name: "CSS3", color: "hover:text-blue-500" },
+    { icon: <SiTailwindcss size={90} />, name: "Tailwind CSS", color: "hover:text-cyan-400" },
+    { icon: <SiJavascript size={90} />, name: "JavaScript", color: "hover:text-yellow-400" },
+    { icon: <SiTypescript size={90} />, name: "TypeScript", color: "hover:text-blue-600" },
+    { icon: <SiNextdotjs size={90} />, name: "Next.js", color: "hover:text-black dark:hover:text-white" },
+    { icon: <SiReact size={90} />, name: "React", color: "hover:text-blue-400" },
+    { icon: <SiPython size={90} />, name: "Python", color: "hover:text-blue-700" },
+    { icon: <SiMysql size={90} />, name: "MySQL", color: "hover:text-blue-800" },
+    { icon: <SiGithub size={90} />, name: "GitHub", color: "hover:text-gray-800 dark:hover:text-gray-200" },
+    { icon: <SiGit size={90} />, name: "Git", color: "hover:text-orange-600" },
+    { icon: <SiFigma size={90} />, name: "Figma", color: "hover:text-purple-500" }
   ];
 
   return (
