@@ -7,31 +7,43 @@ export default function FormFooter() {
   const [email, setEmail] = useState<string>("");
   const [mensagem, setMensagem] = useState<string>("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log("Nome:", nome);
-    console.log("Email:", email);
-    console.log("Mensagem:", mensagem);
+    const formData = new FormData();
+    formData.append("nome", nome);
+    formData.append("email", email);
+    formData.append("mensagem", mensagem);
 
-    alert("Mensagem enviada com sucesso!");
+    try {
+      const response = await fetch("https://formspree.io/f/xzzjbead", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
-    // Limpa os campos
-    setNome("");
-    setEmail("");
-    setMensagem("");
+      if (response.ok) {
+        alert("Mensagem enviada com sucesso!");
+        setNome("");
+        setEmail("");
+        setMensagem("");
+      } else {
+        alert("Erro ao enviar a mensagem. Tente novamente.");
+      }
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+    console.error("Erro:", error.message);
+  }
+      alert("Erro de conexão. Verifique sua internet.");
+    }
   };
 
   return (
     <section id="Contato" className="py-12 px-6 max-w-xl mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center">Contato</h2>
-
-      <form
-        onSubmit={handleSubmit}
-        action="https://formspree.io/f/xzzjbead"
-        method="POST"
-        className="flex flex-col gap-4"
-      >
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col">
           <span className="mb-1 font-medium">Nome</span>
           <input
