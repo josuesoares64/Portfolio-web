@@ -9,13 +9,14 @@
     "lint": "next lint"
   },
   "eslintConfig": {
-  "settings": {
-    "react": {
-      "version": "detect"
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
     }
-  }
-},
+  },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "aos": "^2.3.4",
     "framer-motion": "^12.23.6",
     "next": "15.4.3",
