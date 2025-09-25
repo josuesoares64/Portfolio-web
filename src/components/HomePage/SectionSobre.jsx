@@ -65,21 +65,21 @@ const SectionSobre = () => {
         variants={item}
         className="text-justify indent-4"
       >
-        Sou Josué, desenvolvedor FullStack com foco em front-end, criando interfaces modernas, responsivas e funcionais. Tenho experiência com HTML, CSS, JavaScript, Python e MySQL, e recentemente venho me especializando em tecnologias como React, Next.js, TypeScript e Tailwind CSS, que me permitem entregar aplicações mais performáticas, organizadas e escaláveis.
+        Sou Josué, desenvolvedor FullStack com foco em front-end, especializado em criar interfaces modernas, responsivas e de alta performance. Trabalho com HTML, CSS, JavaScript, Python e MySQL, além de frameworks como React, Next.js, TypeScript e Tailwind CSS, desenvolvendo aplicações escaláveis, bem estruturadas e voltadas para a melhor experiência do usuário.
       </motion.p>
 
       <motion.p 
         variants={item}
         className="text-justify indent-4"
       >
-        Sou formado em Análise e Desenvolvimento de Sistemas e também atuo com boas práticas de SEO e otimização de sites, garantindo melhor desempenho e visibilidade nos mecanismos de busca. Utilizo o Figma para transformar ideias em protótipos funcionais e o GitHub para versionamento e colaboração em equipe.
+        Tenho experiência com SEO e otimização, garantindo que os projetos tenham não apenas desempenho técnico, mas também maior visibilidade e alcance nos buscadores. Utilizo o Figma para transformar ideias em protótipos funcionais e o GitHub para versionamento e colaboração eficiente.
       </motion.p>
 
       <motion.p 
         variants={item}
         className="text-justify indent-4"
       >
-        Cada projeto é uma oportunidade de ir além. Acredito que a diferença entre o comum e o extraordinário está na atenção aos detalhes e na qualidade da execução — e é isso que busco aplicar em cada linha de código que escrevo.
+       Mais do que escrever código, meu objetivo é entregar soluções digitais que gerem impacto real — seja contribuindo em times de desenvolvimento, seja ajudando empresas e profissionais a potencializarem seus negócios através da tecnologia.
       </motion.p>
     </motion.div>
 
