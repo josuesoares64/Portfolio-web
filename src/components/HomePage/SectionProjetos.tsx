@@ -9,24 +9,6 @@ const SectionProjetos = () => {
   const projetos = [
     {
       id: 1,
-      titulo: "Pokédex",
-      imagem: "/img/pokedex.png",
-      github: "https://github.com/josuesoares64/pokedex",
-      demo: "https://pokedex-cqfa.vercel.app/",
-      width: 800,  // Adicionei dimensões reais das imagens
-      height: 450
-    },
-    {
-      id: 2,
-      titulo: "Plataforma Streaming",
-      imagem: "/img/plataforma-streaming.png",
-      github: "https://github.com/josuesoares64/Plataforma-Streaming",
-      demo: "https://plataforma-streaming-ecru.vercel.app/",
-      width: 800,
-      height: 450
-    },
-    {
-      id: 3,
       titulo: "Portfólio Advogado",
       imagem: "/img/pagina-advogado.png",
       github: "https://github.com/josuesoares64/portfolio-advogado",
@@ -35,11 +17,29 @@ const SectionProjetos = () => {
       height: 450
     },
     {
-      id: 4,
+      id: 2,
+      titulo: "Plataforma MagazineHastagR",
+      imagem: "/img/projeto-magazineHastagR.png",
+      github: "https://github.com/josuesoares64/MagazineHashtagR",
+      demo: "https://magazine-hashtag-r.vercel.app/",
+      width: 800,
+      height: 450
+    },
+    {
+      id: 3,
       titulo: "Projeto Android",
       imagem: "/img/projeto-android.png",
       github: "https://github.com/josuesoares64/projeto-android",
       demo: "https://projeto-android-gules.vercel.app/",
+      width: 800,
+      height: 450
+    },
+    {
+      id: 4,
+      titulo: "Plataforma Streaming",
+      imagem: "/img/plataforma-streaming.png",
+      github: "https://github.com/josuesoares64/Plataforma-Streaming",
+      demo: "https://plataforma-streaming-ecru.vercel.app/",
       width: 800,
       height: 450
     }
