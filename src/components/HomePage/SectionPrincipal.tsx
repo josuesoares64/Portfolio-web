@@ -1,15 +1,12 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
 
 const SectionPrincipal = () => {
-  const frases = [
-    "Desenvolvedor Web",
-    "Construindo soluções"
-  ];
+  const frases = ["Desenvolvedor Web", "Construindo soluções"];
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -19,33 +16,39 @@ const SectionPrincipal = () => {
   useEffect(() => {
     if (espera) return;
 
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => deletando ? prev - 1 : prev + 1);
+    const timeout = setTimeout(
+      () => {
+        setSubIndex((prev) => (deletando ? prev - 1 : prev + 1));
 
-      if (!deletando && subIndex === frases[index].length) {
-        setEspera(true);
-        setTimeout(() => setEspera(false), 1500);
-        setDeletando(true);
-      }
+        if (!deletando && subIndex === frases[index].length) {
+          setEspera(true);
+          setTimeout(() => setEspera(false), 1500);
+          setDeletando(true);
+        }
 
-      if (deletando && subIndex === 0) {
-        setDeletando(false);
-        setIndex((prev) => (prev + 1) % frases.length);
-      }
-    }, deletando ? 40 : 100);
+        if (deletando && subIndex === 0) {
+          setDeletando(false);
+          setIndex((prev) => (prev + 1) % frases.length);
+        }
+      },
+      deletando ? 40 : 100
+    );
 
     return () => clearTimeout(timeout);
   }, [subIndex, deletando, espera, index, frases]);
 
   return (
-    <section id='SectionPrincipal' className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-14 md:pt-0">
+    <section
+      id="SectionPrincipal"
+      className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-14 md:pt-0"
+    >
       {/* Text content */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-xl sm:text-2xl md:text-3xl font-black"
+          className="text-xl sm:text-2xl md:text-3xl font-black lg:text-5xl"
         >
           Olá! Eu sou o Josué Soares
         </motion.h2>
@@ -68,8 +71,8 @@ const SectionPrincipal = () => {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="flex justify-center lg:justify-start gap-4 py-4 text-2xl sm:text-3xl"
         >
-          <a 
-            href="https://github.com/josuesoares64" 
+          <a
+            href="https://github.com/josuesoares64"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -77,8 +80,8 @@ const SectionPrincipal = () => {
           >
             <FaGithub />
           </a>
-          <a 
-            href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/" 
+          <a
+            href="https://www.linkedin.com/in/josu%C3%A9-soares-b32713230/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -86,8 +89,8 @@ const SectionPrincipal = () => {
           >
             <FaLinkedin />
           </a>
-          <a 
-            href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg==" 
+          <a
+            href="https://www.instagram.com/josue_soares64?igsh=MWJsd2lqcGZrbmszbg=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -95,8 +98,8 @@ const SectionPrincipal = () => {
           >
             <FaInstagram />
           </a>
-          <a 
-            href="https://wa.me/558882199616" 
+          <a
+            href="https://wa.me/558882199616"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -127,20 +130,19 @@ const SectionPrincipal = () => {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="w-full lg:w-1/2 flex items-center justify-center p-4"
       >
-        <div className="relative w-full max-w-[450px] aspect-square">
+        <div className="relative w-full max-w-[350px] aspect-square rounded-full overflow-hidden shadow-lg">
           <Image
             src="/img/Foto-do-desenvolvedor.png"
             alt="Josué Soares - Desenvolvedor FullStack"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-contain rounded-lg shadow-md"
+            className="object-cover object-top"
             priority
             quality={90}
           />
         </div>
       </motion.div>
-
-        </section>
+    </section>
   );
 };
 
