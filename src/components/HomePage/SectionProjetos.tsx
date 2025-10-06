@@ -28,7 +28,7 @@ const SectionProjetos = () => {
     {
       id: 3,
       titulo: "Projeto Pizzaria",
-      imagem: "/img/projeto-pizzaria.png",
+      imagem: "/img/Projeto-pizzaria.png",
       github: "https://github.com/josuesoares64/pizzaria-web",
       demo: "https://pizzaria-web-drab.vercel.app/",
       width: 800,
