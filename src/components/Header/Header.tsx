@@ -32,7 +32,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden fixed inset-0 bg-black bg-opacity-70 z-40 mt-16 transition-opacity duration-300`}>
-        <nav className="bg-green-800 p-6 animate-slideDown">
+        <nav className="bg-slate-700 bg-opacity-40 p-6 animate-slideDown">
           <UserNav mobile />
         </nav>
       </div>

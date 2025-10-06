@@ -27,10 +27,10 @@ const SectionProjetos = () => {
     },
     {
       id: 3,
-      titulo: "Projeto Android",
-      imagem: "/img/projeto-android.png",
-      github: "https://github.com/josuesoares64/projeto-android",
-      demo: "https://projeto-android-gules.vercel.app/",
+      titulo: "Projeto Pizzaria",
+      imagem: "/img/projeto-pizzaria.png",
+      github: "https://github.com/josuesoares64/pizzaria-web",
+      demo: "https://pizzaria-web-drab.vercel.app/",
       width: 800,
       height: 450
     },
