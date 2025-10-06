@@ -78,7 +78,7 @@ export default function FormFooter() {
         </label>
         <button
           type="submit"
-          className="bg-green-800 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors"
+          className="bg-green-800 text-white py-2 px-4 rounded hover:bg-slate-800 transition-colors"
         >
           Enviar
         </button>
