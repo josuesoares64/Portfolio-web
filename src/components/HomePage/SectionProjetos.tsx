@@ -53,7 +53,7 @@ const SectionProjetos = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-2xl md:text-3xl font-bold mb-8 text-center"
+          className="text-2xl md:text-3xl text-white font-bold mb-8 text-center"
         >
           Projetos
         </motion.h2>

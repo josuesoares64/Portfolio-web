@@ -48,7 +48,7 @@ const SectionPrincipal = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-xl sm:text-2xl md:text-3xl font-black lg:text-5xl"
+          className="text-xl text-white sm:text-2xl md:text-3xl font-black lg:text-5xl"
         >
           Olá! Eu sou o Josué Soares
         </motion.h2>
@@ -76,7 +76,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:text-gray-400 transition-colors"
+            className=" text-white hover:text-gray-400 transition-colors"
           >
             <FaGithub />
           </a>
@@ -85,7 +85,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-gray-400 transition-colors"
+            className="hover:text-gray-400 text-white transition-colors"
           >
             <FaLinkedin />
           </a>
@@ -94,7 +94,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="hover:text-gray-400 transition-colors"
+            className="hover:text-gray-400 text-white transition-colors"
           >
             <FaInstagram />
           </a>
@@ -103,7 +103,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
-            className="hover:text-gray-400 transition-colors"
+            className="hover:text-gray-400 text-white transition-colors"
           >
             <FaWhatsapp />
           </a>

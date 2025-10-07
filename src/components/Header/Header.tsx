@@ -10,7 +10,7 @@ const Header = () => {
     <header className="fixed w-full top-0 left-0 right-0 py-4 px-4 bg-slate-700 bg-opacity-20 shadow-lg z-50">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <a href="#SectionPrincipal" className="flex-shrink-0">
-          <h1 className="font-lobster text-2xl md:text-3xl tracking-wider">
+          <h1 className="font-lobster text-white text-2xl md:text-3xl tracking-wider">
             Josué Soares
           </h1>
         </a>
@@ -32,7 +32,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden fixed inset-0 bg-black bg-opacity-70 z-40 mt-16 transition-opacity duration-300`}>
-        <nav className="bg-slate-700 bg-opacity-40 p-6 animate-slideDown">
+        <nav className="bg-slate-700 text-white bg-opacity-40 p-6 animate-slideDown">
           <UserNav mobile />
         </nav>
       </div>

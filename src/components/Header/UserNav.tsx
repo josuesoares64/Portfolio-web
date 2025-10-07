@@ -9,7 +9,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionSobre"
-            className="text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Sobre Mim
           </a>
@@ -17,7 +17,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionHabilidade"
-            className="text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Habilidades
           </a>
@@ -25,7 +25,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionProjetos"
-            className="text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Projetos
           </a>
@@ -33,7 +33,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionContato"
-            className="text-xl uppercase font-bold hover:text-green-300 transition-colors"
+            className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Contato
           </a>

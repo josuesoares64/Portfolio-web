@@ -57,7 +57,7 @@ const SectionHabilidades = () => {
   ];
 
   return (
-    <section id="SectionHabilidade" className="w-full flex justify-center py-12 md:py-20">
+    <section id="SectionHabilidade" className="w-full text-white flex justify-center py-12 md:py-20">
       <motion.div 
         initial="hidden"
         whileInView="visible"

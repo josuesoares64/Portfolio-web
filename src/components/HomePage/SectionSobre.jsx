@@ -56,28 +56,28 @@ const SectionSobre = () => {
     >
       <motion.h2 
         variants={item}
-        className="text-2xl md:text-3xl font-semibold text-center lg:text-left"
+        className="text-2xl text-white md:text-3xl font-semibold text-center lg:text-left"
       >
         Sobre Mim
       </motion.h2>
 
       <motion.p 
         variants={item}
-        className="text-justify indent-4"
+        className="text-justify text-white indent-4"
       >
         Sou Josué, desenvolvedor FullStack com foco em front-end, especializado em criar interfaces modernas, responsivas e de alta performance. Trabalho com HTML, CSS, JavaScript, Python e MySQL, além de frameworks como React, Next.js, TypeScript e Tailwind CSS, desenvolvendo aplicações escaláveis, bem estruturadas e voltadas para a melhor experiência do usuário.
       </motion.p>
 
       <motion.p 
         variants={item}
-        className="text-justify indent-4"
+        className="text-justify text-white indent-4"
       >
         Tenho experiência com SEO e otimização, garantindo que os projetos tenham não apenas desempenho técnico, mas também maior visibilidade e alcance nos buscadores. Utilizo o Figma para transformar ideias em protótipos funcionais e o GitHub para versionamento e colaboração eficiente.
       </motion.p>
 
       <motion.p 
         variants={item}
-        className="text-justify indent-4"
+        className="text-justify text-white indent-4"
       >
        Mais do que escrever código, meu objetivo é entregar soluções digitais que gerem impacto real — seja contribuindo em times de desenvolvimento, seja ajudando empresas e profissionais a potencializarem seus negócios através da tecnologia.
       </motion.p>

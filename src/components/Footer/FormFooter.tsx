@@ -42,10 +42,10 @@ export default function FormFooter() {
 
   return (
     <section id="Contato" className="py-12 px-6 max-w-xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-center">Contato</h2>
+      <h2 className="text-3xl text-white font-bold mb-6 text-center">Contato</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col">
-          <span className="mb-1 font-medium">Nome</span>
+          <span className="mb-1 text-white font-medium">Nome</span>
           <input
             type="text"
             value={nome}
@@ -56,7 +56,7 @@ export default function FormFooter() {
           />
         </label>
         <label className="flex flex-col">
-          <span className="mb-1 font-medium">Email</span>
+          <span className="mb-1 text-white font-medium">Email</span>
           <input
             type="email"
             value={email}
@@ -67,7 +67,7 @@ export default function FormFooter() {
           />
         </label>
         <label className="flex flex-col">
-          <span className="mb-1 font-medium">Mensagem</span>
+          <span className="mb-1 text-white font-medium">Mensagem</span>
           <textarea
             value={mensagem}
             onChange={(e) => setMensagem(e.target.value)}
