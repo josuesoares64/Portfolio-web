@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { SiGithub } from "react-icons/si";
 import { SlGlobe } from "react-icons/sl";
 import Image from 'next/image';
+import FormFooter from '../Footer/FormFooter';
 
 const SectionProjetos = () => {
   const projetos = [
@@ -109,6 +110,8 @@ const SectionProjetos = () => {
           ))}
         </div>
       </div>
+
+      <FormFooter/>
     </section>
   );
 };

@@ -41,7 +41,7 @@ export default function FormFooter() {
   };
 
   return (
-    <section id="Contato" className="py-12 px-6 max-w-xl mx-auto">
+    <section id="SectionContato" className="py-12 px-6 max-w-xl mx-auto">
       <h2 className="text-3xl text-white font-bold mb-6 text-center">Contato</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col">

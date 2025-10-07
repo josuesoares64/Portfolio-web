@@ -5,12 +5,11 @@ import {
   SiLinkedin,
   SiWhatsapp,
 } from "react-icons/si";
-import FormFooter from "./FormFooter";
 
 const Footer = () => {
   return (
-    <footer id="SectionContato" className="w-full bg-neutral-800 py-9">
-      <FormFooter />
+    <footer className="w-full bg-neutral-800 py-9">
+     
       <div className="flex justify-center direction-cols gap-4">
         <a
           className="text-2xl text-white"
