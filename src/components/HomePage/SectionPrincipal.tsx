@@ -115,8 +115,8 @@ const SectionPrincipal = () => {
           transition={{ delay: 0.9, duration: 0.5 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          href="/files/curriculoj.pdf"
-          download="curriculo.desenvolvedor.pdf"
+          href="/files/curriculo.pdf"
+          download="curriculo.pdf"
           className="bg-green-800 hover:bg-slate-400 w-full sm:w-60 text-white font-bold py-2 px-6 rounded-lg shadow transition duration-300 text-center"
         >
           Baixar Currículo
