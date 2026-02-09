@@ -10,10 +10,10 @@ const SectionProjetos = () => {
   const projetos = [
     {
       id: 1,
-      titulo: "Portfólio Advogado",
-      imagem: "/img/pagina-advogado.png",
-      github: "https://github.com/josuesoares64/portfolio-advogado",
-      demo: "https://josuesoares64.github.io/portfolio-advogado/",
+      titulo: "SaaS para Barbearia",
+      imagem: "/img/SaaS-barbearia.png",
+      github: "https://github.com/josuesoares64/barbearia_web",
+      demo: "https://barbearia-web-mu.vercel.app/barbearia-do-josue",
       width: 800,
       height: 450
     },
