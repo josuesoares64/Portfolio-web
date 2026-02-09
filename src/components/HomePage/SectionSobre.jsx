@@ -65,21 +65,21 @@ const SectionSobre = () => {
         variants={item}
         className="text-justify text-white indent-4"
       >
-        Sou Josué, desenvolvedor FullStack com foco em front-end, especializado em criar interfaces modernas, responsivas e de alta performance. Trabalho com HTML, CSS, JavaScript, Python e MySQL, além de frameworks como React, Next.js, TypeScript e Tailwind CSS, desenvolvendo aplicações escaláveis, bem estruturadas e voltadas para a melhor experiência do usuário.
+Sou Josué, desenvolvedor Full Stack, formado em Análise e Desenvolvimento de Sistemas, com atuação na construção de aplicações web completas, do front-end ao back-end. Trabalho com JavaScript e TypeScript em todo o fluxo da aplicação, desenvolvendo interfaces modernas e APIs REST bem estruturadas, sempre com foco em organização, escalabilidade e qualidade do código.
       </motion.p>
 
       <motion.p 
         variants={item}
         className="text-justify text-white indent-4"
       >
-        Tenho experiência com SEO e otimização, garantindo que os projetos tenham não apenas desempenho técnico, mas também maior visibilidade e alcance nos buscadores. Utilizo o Figma para transformar ideias em protótipos funcionais e o GitHub para versionamento e colaboração eficiente.
+No back-end, desenvolvo APIs REST com Node.js e Express, implementando autenticação com JWT, validação de dados e integração com bancos de dados relacionais como PostgreSQL, MySQL e MongoDB. No front-end, crio interfaces responsivas e performáticas com React e Next.js, consumindo essas APIs de forma desacoplada e consistente, garantindo uma integração sólida entre as camadas da aplicação.
       </motion.p>
 
       <motion.p 
         variants={item}
         className="text-justify text-white indent-4"
       >
-       Mais do que escrever código, meu objetivo é entregar soluções digitais que gerem impacto real — seja contribuindo em times de desenvolvimento, seja ajudando empresas e profissionais a potencializarem seus negócios através da tecnologia.
+        Tenho experiência em projetos orientados a produto, incluindo sistemas e plataformas no modelo SaaS, aplicando organização em camadas, versionamento com Git/GitHub e prototipagem no Figma. Busco entregar soluções completas, fáceis de manter e com potencial real de evolução, contribuindo tanto tecnicamente quanto na construção de produtos digitais que gerem valor para usuários e negócios.
       </motion.p>
     </motion.div>
 
