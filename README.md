@@ -1,60 +1,124 @@
-# 🌐 Portfólio de Josué Soares
+🌐 Portfólio de Josué Soares
 
-Bem-vindo ao meu portfólio online! Aqui você vai encontrar um pouco sobre mim, minhas habilidades, projetos mais recentes e como me contatar.
+Bem-vindo ao meu portfólio online!
+Aqui você encontrará informações sobre mim, minhas habilidades técnicas, projetos mais relevantes e formas de contato.
 
----
+👋 Sobre mim
 
-## 👋 Sobre mim
+Sou Josué Bezerra Soares, desenvolvedor Full Stack com foco em criar aplicações modernas, performáticas e escaláveis.
 
-Sou **Josué Bezerra Soares**, desenvolvedor Full Stack com foco em front-end e apaixonado por transformar ideias em interfaces modernas, responsivas e funcionais.  
-Atuo com **React, Next.js, TypeScript e Tailwind CSS**, e também tenho experiência em **HTML, CSS, JavaScript, Python e MySQL**.  
-Minha formação é em **Análise e Desenvolvimento de Sistemas**, e complemento meu trabalho com boas práticas de SEO, otimização de performance, prototipagem no Figma e versionamento com GitHub.
+Tenho experiência no desenvolvimento de interfaces com React, Next.js e TypeScript, além da construção de APIs e sistemas completos com Node.js, Express e bancos relacionais.
 
-> “A diferença entre o comum e o extraordinário está na atenção aos detalhes — e é isso que aplico em cada linha de código.”
+Sou formado em Análise e Desenvolvimento de Sistemas e aplico no dia a dia boas práticas como:
 
----
+Arquitetura em camadas (Controller → Service → Model)
 
-## 🛠️ Habilidades técnicas
+Código limpo e reutilizável
 
-- **Front-end:** React, Next.js, TypeScript, HTML, CSS, Tailwind CSS  
-- **Back-end / Banco de dados:** Node.js, Python, MySQL, REST APIs  
-- **Ferramentas & boas práticas:** Git / GitHub, SEO, otimização de performance, prototipagem (Figma)  
-- **Deploy / Ambiente:** Vercel, hospedagem web, configuração de builds
+Otimização de performance
 
----
+Experiência do usuário (UX)
 
-## 📂 Projetos destacados
+💡 Gosto de transformar ideias em produtos reais, com atenção aos detalhes e foco em resolver problemas.
 
-Aqui estão alguns dos projetos que mais representam meu trabalho e evolução:
+“A diferença entre o comum e o extraordinário está na atenção aos detalhes.”
 
-| Projeto | Descrição | Tecnologias | Link |
-|--------|------------|--------------------------|------|
-| **Pizzaria Web** | Simula o site de uma pizzaria, com cardápio dinâmico e interface responsiva | React, Next.js, TypeScript, Tailwind CSS | 🔗 [Ver Projeto](https://pizzaria-web-drab.vercel.app/) |
-| **Magazine Hashtag** | Interface de e-commerce com listagem, categorias e detalhes de produtos | React, Tailwind CSS, JavaScript | 🔗 [Ver Projeto](https://magazine-hashtag-r.vercel.app/) |
-| **Plataforma Streaming** | Projeto de streaming com exibição de filmes e séries, uso de API e layout fluido | React, JavaScript, CSS | 🔗 [Ver Projeto](https://plataforma-streaming-ecru.vercel.app/) |
-| **Outros projetos** | (Caso queira, liste outros projetos menores ou de aprendizado) | — | — |
+🛠️ Habilidades técnicas
+🎨 Front-end
 
----
+React
 
-## 📈 O que aprendi / evoluí com esse portfólio
+Next.js
 
-- Organização de estrutura de projeto usando Next.js  
-- Tipagem com TypeScript para maior segurança e escalabilidade  
-- Estilização com Tailwind CSS para acelerar o desenvolvimento visual  
-- Deploy contínuo no Vercel para entregas rápidas e confiáveis  
-- Integração entre front-end, componentes e navegação entre páginas
+TypeScript
 
----
+JavaScript (ES6+)
 
-## 💬 Vamos conversar?
+HTML5 e CSS3
 
-Se você gostou do meu trabalho ou quer discutir possíveis colaborações, aqui estão meus contatos:
+Tailwind CSS
 
-- LinkedIn: [josue-soares-dev](https://www.linkedin.com/in/josue-soares-dev/)  
-- E-mail: josue.bezerra.2020@gmail.com  
-- GitHub: [josuesoaresdev](https://github.com/josuesoaresdev)  
+⚙️ Back-end & Banco de Dados
 
----
+Node.js
 
-Obrigado pela visita e por conhecer um pouco do meu universo de código! 🚀  
-*(Se curtir o portfólio, não deixe uma ⭐ no repositório 😊)*
+Express
+
+Sequelize ORM
+
+REST APIs
+
+MySQL / PostgreSQL
+
+🧰 Ferramentas & Boas práticas
+
+Git e GitHub
+
+Arquitetura em camadas
+
+SEO e performance web
+
+Figma (prototipação)
+
+🚀 Deploy & Ambiente
+
+Vercel
+
+Configuração de builds
+
+Integração contínua
+
+📂 Projetos destacados
+💈 SaaS de Gestão para Barbearias
+
+Sistema completo com controle de agendamentos e arquitetura escalável.
+
+Stack: Next.js, Node.js, Express, Sequelize, PostgreSQL
+🔗 https://barbearia-web-mu.vercel.app/barbearia-do-josue
+
+🍕 Pizzaria Web
+
+Simulação de site de pizzaria com cardápio dinâmico e layout responsivo.
+
+Stack: React, Next.js, TypeScript, Tailwind
+🔗 https://pizzaria-web-drab.vercel.app/
+
+🛍️ Magazine Hashtag
+
+Interface de e-commerce com listagem de produtos, categorias e página de detalhes.
+
+Stack: React, JavaScript, Tailwind
+🔗 https://magazine-hashtag-r.vercel.app/
+
+🎬 Plataforma de Streaming
+
+Aplicação com listagem de filmes e séries utilizando API externa e navegação dinâmica.
+
+Stack: React, JavaScript, CSS
+🔗 https://plataforma-streaming-ecru.vercel.app/
+
+📈 Evolução com este portfólio
+
+Este projeto representa minha evolução prática em:
+
+Estruturação de aplicações com Next.js
+
+Tipagem e escalabilidade com TypeScript
+
+Criação de APIs REST
+
+Organização de código com arquitetura em camadas
+
+Deploy contínuo e publicação de projetos
+
+💬 Contato
+
+Se quiser conversar sobre oportunidades, projetos ou parcerias:
+
+💼 LinkedIn: josue-soares-dev
+
+📧 E-mail: josue.bezerra.2020@gmail.com
+
+💻 GitHub: josuesoaresdev
+
+⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
