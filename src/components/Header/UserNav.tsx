@@ -1,14 +1,16 @@
 interface UserNavProps {
   mobile?: boolean;
+  onClose?: () => void;
 }
 
-const UserNav = ({ mobile }: UserNavProps) => {
+const UserNav = ({ mobile, onClose }: UserNavProps) => {
   return (
     <nav>
       <ul className={`flex ${mobile ? 'flex-col space-y-6' : 'flex-row space-x-6'} items-center`}>
         <li>
           <a
             href="#SectionSobre"
+            onClick={onClose}
             className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Sobre Mim
@@ -17,6 +19,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionHabilidade"
+            onClick={onClose}
             className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Habilidades
@@ -25,6 +28,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionProjetos"
+            onClick={onClose}
             className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Projetos
@@ -33,6 +37,7 @@ const UserNav = ({ mobile }: UserNavProps) => {
         <li>
           <a
             href="#SectionContato"
+            onClick={onClose}
             className="text-xl uppercase text-white font-bold hover:text-green-300 transition-colors"
           >
             Contato

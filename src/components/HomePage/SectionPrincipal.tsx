@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 
 const SectionPrincipal = () => {
-  const frases = ["Desenvolvedor Web", "Construindo soluções"];
+  const frases = ["Desenvolvedor Full Stack", "Foco em Back-End", "Node.js · APIs · PostgreSQL"];
 
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -43,21 +43,23 @@ const SectionPrincipal = () => {
       className="flex flex-col lg:flex-row w-full min-h-screen items-center justify-center pt-14 md:pt-0"
     >
       {/* Text content */}
-      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-1 text-center lg:text-left">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 sm:px-12 lg:px-20 py-10 mt-0 md:mt-20 space-y-2 text-center lg:text-left">
+        
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-xl text-white sm:text-2xl md:text-3xl font-black lg:text-5xl"
         >
-          Olá! Eu sou o Josué Soares
+          Olá, sou Josué Soares
         </motion.h2>
 
+        {/* Typewriter */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="text-green-600 text-base sm:text-lg md:text-4xl font-semibold min-h-[40px] sm:min-h-[50px] md:min-h-[60px]"
+          className="text-green-500 text-base sm:text-lg md:text-4xl font-semibold min-h-[40px] sm:min-h-[50px] md:min-h-[60px]"
         >
           <span>
             {frases[index].substring(0, subIndex)}
@@ -65,6 +67,21 @@ const SectionPrincipal = () => {
           </span>
         </motion.div>
 
+        {/* Subtítulo de posicionamento */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="text-gray-400 text-sm sm:text-base"
+        >
+          Full Stack com foco em Back-End · Node.js & APIs REST
+          <br />
+          <span className="text-gray-500 text-xs sm:text-sm">
+            Fortaleza, CE — disponível para trabalho remoto
+          </span>
+        </motion.p>
+
+        {/* Social icons */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -76,7 +93,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className=" text-white hover:text-gray-400 transition-colors"
+            className="text-white hover:text-green-500 transition-colors duration-300"
           >
             <FaGithub />
           </a>
@@ -85,7 +102,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:text-gray-400 text-white transition-colors"
+            className="text-white hover:text-green-500 transition-colors duration-300"
           >
             <FaLinkedin />
           </a>
@@ -94,7 +111,7 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="hover:text-gray-400 text-white transition-colors"
+            className="text-white hover:text-green-500 transition-colors duration-300"
           >
             <FaInstagram />
           </a>
@@ -103,12 +120,13 @@ const SectionPrincipal = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
-            className="hover:text-gray-400 text-white transition-colors"
+            className="text-white hover:text-green-500 transition-colors duration-300"
           >
             <FaWhatsapp />
           </a>
         </motion.div>
 
+        {/* CTA Button */}
         <motion.a
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -117,7 +135,7 @@ const SectionPrincipal = () => {
           whileTap={{ scale: 0.95 }}
           href="/files/curriculo.pdf"
           download="curriculo.pdf"
-          className="bg-green-800 hover:bg-slate-400 w-full sm:w-60 text-white font-bold py-2 px-6 rounded-lg shadow transition duration-300 text-center"
+          className="bg-green-700 hover:bg-green-600 w-full sm:w-60 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300 text-center"
         >
           Baixar Currículo
         </motion.a>
@@ -133,7 +151,7 @@ const SectionPrincipal = () => {
         <div className="relative w-full max-w-[350px] aspect-square rounded-full overflow-hidden shadow-lg">
           <Image
             src="/img/Foto-do-desenvolvedor.png"
-            alt="Josué Soares - Desenvolvedor FullStack"
+            alt="Josué Soares - Desenvolvedor Full Stack com foco em Back-End"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover object-top"
