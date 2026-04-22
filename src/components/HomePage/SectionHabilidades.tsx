@@ -64,6 +64,7 @@ const backendSkills: Skill[] = [
   { icon: <SiExpress size={48} />, name: 'Express.js', color: 'hover:text-gray-300' },
   { icon: <SiSequelize size={48} />, name: 'Sequelize', color: 'hover:text-blue-400' },
   { icon: <SiJsonwebtokens size={48} />, name: 'JWT', color: 'hover:text-pink-400' },
+  { icon: <SiTypescript size={48} />, name: 'TypeScript', color: 'hover:text-blue-400' },
   { icon: <SiMongodb size={48} />, name: 'MongoDB', color: 'hover:text-green-400' },
   { icon: <SiPostman size={48} />, name: 'Postman', color: 'hover:text-orange-400' },
 ];
