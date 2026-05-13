@@ -133,7 +133,7 @@ const SectionPrincipal = () => {
           transition={{ delay: 0.9, duration: 0.5 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          href="/files/curriculo.pdf"
+          href="/files/Josue_Soares_Dev.pdf"
           download="curriculo.pdf"
           className="bg-green-700 hover:bg-green-600 w-full sm:w-60 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300 text-center"
         >
