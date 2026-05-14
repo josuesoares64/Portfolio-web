@@ -1,124 +1,157 @@
-🌐 Portfólio de Josué Soares
+# 👨‍💻 Josué Soares
 
-Bem-vindo ao meu portfólio online!
-Aqui você encontrará informações sobre mim, minhas habilidades técnicas, projetos mais relevantes e formas de contato.
+Desenvolvedor Full Stack com foco em Back-End, especializado em Node.js, TypeScript e arquitetura de APIs REST escaláveis.
 
-👋 Sobre mim
+📍 Fortaleza, CE — disponível para trabalho remoto
 
-Sou Josué Bezerra Soares, desenvolvedor Full Stack com foco em criar aplicações modernas, performáticas e escaláveis.
+---
 
-Tenho experiência no desenvolvimento de interfaces com React, Next.js e TypeScript, além da construção de APIs e sistemas completos com Node.js, Express e bancos relacionais.
+# 🌐 Portfólio
 
-Sou formado em Análise e Desenvolvimento de Sistemas e aplico no dia a dia boas práticas como:
+🔗 https://josuesoaresdev.vercel.app/
 
-Arquitetura em camadas (Controller → Service → Model)
+Meu portfólio reúne projetos full stack desenvolvidos com foco em arquitetura, escalabilidade, experiência do usuário e construção de produtos reais.
 
-Código limpo e reutilizável
+---
 
-Otimização de performance
+# 🚀 Sobre Mim
 
-Experiência do usuário (UX)
+Sou formado em Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor Full Stack com foco principal em back-end.
 
-💡 Gosto de transformar ideias em produtos reais, com atenção aos detalhes e foco em resolver problemas.
+Comecei no front-end, dominando React e Next.js, mas foi no back-end que encontrei meu maior interesse: arquitetura, regras de negócio, modelagem de sistemas e construção de APIs robustas.
 
-“A diferença entre o comum e o extraordinário está na atenção aos detalhes.”
+Hoje trabalho principalmente com:
 
-🛠️ Habilidades técnicas
-🎨 Front-end
+- Node.js
+- TypeScript
+- Express.js
+- PostgreSQL
+- Sequelize
+- Arquitetura em camadas
+- APIs REST
+- JWT Authentication
 
-React
+Também possuo domínio suficiente de front-end para atuar no ciclo completo da aplicação utilizando React, Next.js e Tailwind CSS.
 
-Next.js
+---
 
-TypeScript
+# 🧠 Especialidades
 
-JavaScript (ES6+)
+✔️ APIs REST escaláveis  
+✔️ Arquitetura em camadas (Router → Controller → Service → Model)  
+✔️ Clean Code e SOLID  
+✔️ Autenticação JWT  
+✔️ Sistemas SaaS multi-tenant  
+✔️ Modelagem relacional com PostgreSQL e MySQL  
+✔️ Desenvolvimento Full Stack com TypeScript  
+✔️ Integração entre front-end e back-end  
+✔️ Organização e reutilização de lógica de negócio  
 
-HTML5 e CSS3
+---
 
-Tailwind CSS
+# 🛠️ Stack Tecnológica
 
-⚙️ Back-end & Banco de Dados
+## ⚙️ Back-End
 
-Node.js
+- Node.js
+- Express.js
+- TypeScript
+- Sequelize ORM
+- JWT
+- PostgreSQL
+- MySQL
+- MongoDB
 
-Express
+## 🎨 Front-End
 
-Sequelize ORM
+- React
+- Next.js
+- JavaScript
+- TypeScript
+- Tailwind CSS
+- HTML5
+- CSS3
 
-REST APIs
+## 🧰 Ferramentas & Ambiente
 
-MySQL / PostgreSQL
+- Git & GitHub
+- Postman
+- Figma
+- Vercel
 
-🧰 Ferramentas & Boas práticas
+---
 
-Git e GitHub
+# 📂 Projetos em Destaque
 
-Arquitetura em camadas
+## 💈 SaaS para Barbearias
 
-SEO e performance web
+Plataforma SaaS com arquitetura multi-tenant para gestão de agendamentos, autenticação JWT, controle de conflitos de horários em tempo real e APIs RESTful completas.
 
-Figma (prototipação)
+### Stack
+`Node.js` `TypeScript` `Express` `PostgreSQL` `Sequelize` `React` `Tailwind CSS`
 
-🚀 Deploy & Ambiente
-
-Vercel
-
-Configuração de builds
-
-Integração contínua
-
-📂 Projetos destacados
-💈 SaaS de Gestão para Barbearias
-
-Sistema completo com controle de agendamentos e arquitetura escalável.
-
-Stack: Next.js, Node.js, Express, Sequelize, PostgreSQL
 🔗 https://barbearia-web-mu.vercel.app/barbearia-do-josue
 
-🍕 Pizzaria Web
+---
 
-Simulação de site de pizzaria com cardápio dinâmico e layout responsivo.
+## 🏭 Sistema ERP Autoflex
 
-Stack: React, Next.js, TypeScript, Tailwind
+Sistema ERP com algoritmo de alocação otimizada de recursos e simulação dinâmica de produção em tempo real.
+
+O sistema calcula consumo de matéria-prima, capacidade produtiva e lucro automaticamente.
+
+### Stack
+`Node.js` `TypeScript` `PostgreSQL` `Sequelize` `React` `Next.js`
+
+---
+
+## 🍕 Bella Pizza
+
+Aplicação full stack de pedidos com CRUD completo, filtros de busca, upload de imagens e persistência de dados.
+
+### Stack
+`Next.js` `React` `TypeScript` `Node.js` `PostgreSQL`
+
 🔗 https://pizzaria-web-drab.vercel.app/
 
-🛍️ Magazine Hashtag
+---
 
-Interface de e-commerce com listagem de produtos, categorias e página de detalhes.
+## 🎬 Plataforma Streaming
 
-Stack: React, JavaScript, Tailwind
-🔗 https://magazine-hashtag-r.vercel.app/
+Interface inspirada em plataformas de streaming, com foco em componentização, consumo de APIs e experiência do usuário.
 
-🎬 Plataforma de Streaming
+### Stack
+`React` `JavaScript` `CSS3`
 
-Aplicação com listagem de filmes e séries utilizando API externa e navegação dinâmica.
-
-Stack: React, JavaScript, CSS
 🔗 https://plataforma-streaming-ecru.vercel.app/
 
-📈 Evolução com este portfólio
+---
 
-Este projeto representa minha evolução prática em:
+# 📈 Evolução Técnica
 
-Estruturação de aplicações com Next.js
+Este portfólio representa minha evolução prática em:
 
-Tipagem e escalabilidade com TypeScript
+- Desenvolvimento de APIs REST
+- Estruturação de arquiteturas escaláveis
+- TypeScript aplicado no front-end e back-end
+- Modelagem de banco de dados
+- Sistemas multi-tenant
+- Clean Code e organização de projetos
+- Deploy e publicação de aplicações
 
-Criação de APIs REST
+---
 
-Organização de código com arquitetura em camadas
+# 📬 Contato
 
-Deploy contínuo e publicação de projetos
+💼 LinkedIn  
+https://www.linkedin.com/in/josue-soares-dev/
 
-💬 Contato
+📧 E-mail  
+josue.bezerra.2020@gmail.com
 
-Se quiser conversar sobre oportunidades, projetos ou parcerias:
+💻 GitHub  
+https://github.com/josuesoaresdev
 
-💼 LinkedIn: josue-soares-dev
+---
 
-📧 E-mail: josue.bezerra.2020@gmail.com
-
-💻 GitHub: josuesoaresdev
-
-⭐ Se você gostou do projeto, considere deixar uma estrela no repositório!
+⭐ Se gostou dos projetos, considere deixar uma estrela nos repositórios.
